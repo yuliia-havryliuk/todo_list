@@ -1,7 +1,9 @@
  <template>
         <div>
             <h2> What do you plan today? :)</h2>
-            <router-link to="/">Home</router-link>
+            <router-link to="/">
+                <img src="https://avatanplus.com/files/resources/original/57a726e809c0715664effa68.png">
+            </router-link>
             <div class ="addAndSelect">
                 <AddTodo
                         @add-todo="addTodo"/>
@@ -84,5 +86,9 @@ select{
     height: 30px;
     line-height: 30px;
     margin: 5px 5px 5px 5px;
+}
+img{
+    max-width: 90px;
+    max-height: 90px;
 }
 </style>
